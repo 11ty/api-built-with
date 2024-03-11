@@ -1,0 +1,33 @@
+{
+  "name": "eleventy-api-built-with",
+  "version": "1.0.0",
+  "description": "Find the hosting provider for a web site URL.",
+  "main": "built-with.js",
+  "license": "MIT",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/11ty/api-built-with.git"
+  },
+  "author": {
+    "name": "Zach Leatherman",
+    "email": "zachleatherman@gmail.com",
+    "url": "https://zachleat.com/"
+  },
+  "scripts": {
+    "test": "npx ava"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/11ty/api-built-with/issues"
+  },
+  "homepage": "https://github.com/11ty/api-built-with#readme",
+  "devDependencies": {
+    "ava": "^6.1.2"
+  },
+  "dependencies": {
+    "@11ty/eleventy-img": "^4.0.2",
+    "@netlify/functions": "^2.6.0",
+    "node-fetch": "^2.7.0"
+  }
+}

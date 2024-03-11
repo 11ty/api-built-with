@@ -1,0 +1,9 @@
+[functions]
+directory = "functions"
+included_files = ["x.svg"]
+
+[[redirects]]
+from = "/*"
+to = "/.netlify/builders/built-with"
+status = 200
+force = true

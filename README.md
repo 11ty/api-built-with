@@ -20,14 +20,14 @@ Types of metadata currently supported:
 URLs have the formats:
 
 ```
-/json/:url/
-/image/host/:url/
+/:url/json/
+/:url/image/host/
 ```
 
 * `url` must be URI encoded.
 
 ## Examples
 
-* Eleventy Base Blog is hosted by: <img src="https://v1.built-with.11ty.dev/image/host/https%3A%2F%2F11ty.github.io%2Feleventy-base-blog%2F/" width="30" height="30" alt="11ty Base Blog">
-* vercel.com is built with: <img src="https://v1.built-with.11ty.dev/image/host/https%3A%2F%2Fvercel.com%2Fen-us%2F/" width="30" height="30" alt="Vercel">
-* netlify.com is hosted by: <img src="https://v1.built-with.11ty.dev/image/host/https%3A%2F%2Fwww.netlify.com/" width="30" height="30" alt="Eleventy">
+* Eleventy Base Blog is hosted by: <a href="https://v1.built-with.11ty.dev/https%3A%2F%2F11ty.github.io%2Feleventy-base-blog%2F/image/host/"><img src="https://v1.built-with.11ty.dev/https%3A%2F%2F11ty.github.io%2Feleventy-base-blog%2F/image/host/" width="30" height="30" alt="Eleventy Base Blog"></a>
+* vercel.com is hosted by: <a href="https://v1.built-with.11ty.dev/https%3A%2F%2Fvercel.com%2Fen-us%2F/image/host/"><img src="https://v1.built-with.11ty.dev/https%3A%2F%2Fvercel.com%2Fen-us%2F/image/host/" width="30" height="30" alt="Vercel"></a>
+* netlify.com is hosted by: <a href="https://v1.built-with.11ty.dev/https%3A%2F%2Fwww.netlify.com/image/host/"><img src="https://v1.built-with.11ty.dev/https%3A%2F%2Fwww.netlify.com/image/host/" width="30" height="30" alt="Netlify"></a>

@@ -5,18 +5,9 @@ const { Url, Host, LogoFromUrl } = require("../../built-with.js");
 const DEFAULT_IMAGE_DIMENSIONS = [60, 60];
 
 async function handler(event, context) {
-	// e.g. /json/https%3A%2F%2Fwww.11ty.dev%2F/
-	// e.g. /image/host/https%3A%2F%2Fwww.11ty.dev%2F/
-	let [format, a, b] = event.path.split("/").filter(entry => !!entry);
-	let url;
-	let subtype;
-
-	if(format === "json") {
-		url = a;
-	} else if(format === "image") {
-		subtype = a;
-		url = b;
-	}
+	// e.g. /https%3A%2F%2Fwww.11ty.dev%2F/json/
+	// e.g. /https%3A%2F%2Fwww.11ty.dev%2F/image/host/
+	let [url, format, subtype] = event.path.split("/").filter(entry => !!entry);
 
 	url = decodeURIComponent(url);
 

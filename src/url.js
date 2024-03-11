@@ -2,6 +2,10 @@ const fetch = require("node-fetch");
 
 class Url {
 	constructor(url) {
+		if(typeof url !== "string") {
+			throw new Error("Url expects string constructor");
+		}
+
 		this.url = url;
 
 		if(!Url.isFullUrl(url)) {

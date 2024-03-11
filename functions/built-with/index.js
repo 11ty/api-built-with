@@ -31,7 +31,7 @@ async function handler(event, context) {
 		if(format === "image") {
 			let image;
 			if(subtype === "host") {
-				image = LogoFromUrl(hostKey, DEFAULT_IMAGE_DIMENSIONS[0]);
+				image = await LogoFromUrl.getImage(hostKey, DEFAULT_IMAGE_DIMENSIONS[0]);
 			} else {
 				throw new Error("Invalid subtype");
 			}

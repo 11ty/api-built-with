@@ -1,4 +1,4 @@
-const BuiltWith = require("../url.js");
+const BuiltWith = require("./built-with-type.js");
 
 class Host extends BuiltWith {
 	static tests = {
@@ -32,8 +32,6 @@ class Host extends BuiltWith {
 
 		return false;
 	}
-
-
 }
 
 module.exports = Host;

@@ -6,9 +6,9 @@ class BuiltWith {
 			this.url = new Url(url);
 		} else if(url instanceof Url) {
 			this.url = url;
+		} else {
+			throw new Error("Invalid constructor argument to BuiltWith.");
 		}
-
-		throw new Error("Invalid constructor argument to BuiltWith.");
   }
 
 	async fetch() {

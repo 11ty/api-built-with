@@ -12,6 +12,7 @@ Types of metadata currently supported:
 	* GitHub Pages
 	* Netlify
 	* Gatsby
+	* Fly.io
 
 ## Usage
 

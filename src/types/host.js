@@ -14,6 +14,9 @@ class Host extends BuiltWith {
 		gatsby: (headers) => {
 			return headers.get("server")?.includes("GatsbyHosting");
 		},
+		flyio: (headers) => {
+			return headers.get("server")?.startsWith("Fly/");
+		},
 		github: (headers) => {
 			return headers.get("server")?.includes("GitHub.com") || headers.get("x-github-request-id");
 		},

@@ -15,7 +15,8 @@
     "url": "https://zachleat.com/"
   },
   "scripts": {
-    "test": "npx ava"
+    "test": "npx ava",
+    "start": "netlify dev"
   },
   "keywords": [],
   "bugs": {

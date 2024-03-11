@@ -13,6 +13,7 @@ Types of metadata currently supported:
 	* Netlify
 	* Gatsby
 	* Fly.io
+	* Amazon (S3, Cloudfront)
 
 ## Usage
 

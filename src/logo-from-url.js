@@ -9,6 +9,7 @@ class LogoFromUrl {
 		gitlab: "https://gitlab.com/",
 		gatsby: "https://www.gatsbyjs.com/",
 		flyio: "https://fly.io/",
+		amazon: "https://www.amazon.com/",
 	};
 
 	static getLogoImageUrl(key) {

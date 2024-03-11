@@ -20,6 +20,10 @@ class Host extends BuiltWith {
 		github: (headers) => {
 			return headers.get("server")?.includes("GitHub.com") || headers.get("x-github-request-id");
 		},
+		amazon: (headers) => {
+			// AmazonS3
+			return headers.get("server")?.includes("Amazon") || headers.get("X-Cache")?.includes("cloudfront");
+		},
 		gitlab: () => {
 			// I couldn’t find any unique headers for this
 			return false;

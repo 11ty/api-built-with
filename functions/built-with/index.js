@@ -4,6 +4,8 @@ const { Url, Host, LogoFromUrl } = require("../../built-with.js");
 
 const DEFAULT_IMAGE_DIMENSIONS = [60, 60];
 
+const ONE_WEEK = 60*60*24*7;
+
 async function handler(event, context) {
 	// e.g. /https%3A%2F%2Fwww.11ty.dev%2F/json/
 	// e.g. /https%3A%2F%2Fwww.11ty.dev%2F/image/host/
@@ -29,6 +31,7 @@ async function handler(event, context) {
 
 			return {
 				statusCode: 200,
+				ttl: ONE_WEEK,
 				headers: {
 					"content-type": image.contentType,
 					"x-host": hostKey,
@@ -40,6 +43,7 @@ async function handler(event, context) {
 
 		return {
 			statusCode: 200,
+			ttl: ONE_WEEK,
 			headers: {
 				"content-type": "application/json",
 			},
@@ -51,8 +55,8 @@ async function handler(event, context) {
 		if(format === "image") {
 			return {
 				// We need to return 200 here or Firefox won’t display the image
-				// HOWEVER a 200 means that if it times out on the first attempt it will stay the default image until the next build.
 				statusCode: 200,
+				ttl: ONE_WEEK,
 				headers: {
 					"content-type": "image/svg+xml",
 					"x-error-message": error.message

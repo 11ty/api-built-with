@@ -7,14 +7,15 @@ const DEFAULT_IMAGE_DIMENSIONS = [60, 60];
 async function handler(event, context) {
 	// e.g. /json/https%3A%2F%2Fwww.11ty.dev%2F/
 	// e.g. /image/host/https%3A%2F%2Fwww.11ty.dev%2F/
-	let [format, ...rest] = event.path.split("/").filter(entry => !!entry);
-	let url = rest.pop();
+	let [format, a, b] = event.path.split("/").filter(entry => !!entry);
+	let url;
 	let subtype;
 
 	if(format === "json") {
-		// do nothing
+		url = a;
 	} else if(format === "image") {
-		subtype = rest.pop();
+		subtype = a;
+		url = b;
 	}
 
 	url = decodeURIComponent(url);

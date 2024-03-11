@@ -25,6 +25,6 @@ URLs have the formats:
 
 ## Examples
 
-* Eleventy Base Blog is hosted by: <img src="https://v1.generator.11ty.dev/image/https%3A%2F%2F11ty.github.io%2Feleventy-base-blog%2F/" width="30" height="30" alt="11ty Base Blog">
-* vercel.com is built with: <img src="https://v1.generator.11ty.dev/image/https%3A%2F%2Fvercel.com%2Fen-us%2F/" width="30" height="30" alt="Vercel">
+* Eleventy Base Blog is hosted by: <img src="https://v1.generator.11ty.dev/image/host/https%3A%2F%2F11ty.github.io%2Feleventy-base-blog%2F/" width="30" height="30" alt="11ty Base Blog">
+* vercel.com is built with: <img src="https://v1.generator.11ty.dev/image/host/https%3A%2F%2Fvercel.com%2Fen-us%2F/" width="30" height="30" alt="Vercel">
 * netlify.com is hosted by: <img src="https://v1.generator.11ty.dev/image/host/https%3A%2F%2Fwww.netlify.com/" width="30" height="30" alt="Eleventy">

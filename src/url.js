@@ -4,12 +4,12 @@ class Url {
 	constructor(url) {
 		this.url = url;
 
-		if(!this.isFullUrl(url)) {
+		if(!Url.isFullUrl(url)) {
 			throw new Error(`Invalid \`url\`: ${url}`);
 		}
 	}
 
-	isFullUrl(url) {
+	static isFullUrl(url) {
 		try {
 			new URL(url);
 			return true;

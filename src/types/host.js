@@ -11,6 +11,9 @@ class Host extends BuiltWith {
 		cloudflare: (headers) => {
 			return headers.get("server")?.includes("cloudflare") || headers.get("cf-ray");
 		},
+		gatsby: (headers) => {
+			return headers.get("server")?.includes("GatsbyHosting");
+		},
 		github: (headers) => {
 			return headers.get("server")?.includes("GitHub.com") || headers.get("x-github-request-id");
 		},

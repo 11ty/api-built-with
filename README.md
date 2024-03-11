@@ -11,6 +11,7 @@ Types of metadata currently supported:
 	* Vercel
 	* GitHub Pages
 	* Netlify
+	* Gatsby
 
 ## Usage
 

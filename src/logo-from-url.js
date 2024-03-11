@@ -7,6 +7,7 @@ class LogoFromUrl {
 		cloudflare: "http://www.cloudflare.com/",
 		github: "https://github.com/",
 		gitlab: "https://gitlab.com/",
+		gatsby: "https://www.gatsbyjs.com/",
 	};
 
 	static getLogoImageUrl(key) {

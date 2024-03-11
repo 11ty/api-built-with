@@ -1,9 +1,5 @@
-[functions]
-directory = "functions"
-included_files = ["x.svg"]
-
 [[redirects]]
 from = "/*"
-to = "/.netlify/builders/built-with"
-status = 200
+to = "https://v1.built-with.11ty.dev/:splat"
+status = 301
 force = true

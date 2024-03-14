@@ -24,7 +24,7 @@ URLs have the formats:
 /:url/image/host/
 ```
 
-* `url` must be URI encoded.
+* `url` must be URI encoded (via `encodeURIComponent`).
 
 ## Examples
 

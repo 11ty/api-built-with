@@ -10,6 +10,9 @@ class LogoFromUrl {
 		gatsby: "https://www.gatsbyjs.com/",
 		flyio: "https://fly.io/",
 		amazon: "https://www.amazon.com/",
+		neocities: "https://neocities.org/",
+		codeberg: "https://codeberg.org/",
+		nekoweb: "https://nekoweb.org/"
 	};
 
 	static getLogoImageUrl(key) {

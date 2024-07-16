@@ -1,8 +1,8 @@
-const Url = require("./src/url.js");
-const LogoFromUrl = require("./src/logo-from-url.js");
-const Host = require("./src/types/host.js");
+import Url from "./src/url.js";
+import LogoFromUrl from "./src/logo-from-url.js";
+import Host from "./src/types/host.js";
 
-module.exports = {
+export {
 	Url,
 	LogoFromUrl,
 	Host

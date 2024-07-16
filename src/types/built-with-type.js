@@ -1,4 +1,4 @@
-const Url = require("../url.js");
+import Url from "../url.js";
 
 class BuiltWith {
 	constructor(url) {
@@ -16,4 +16,4 @@ class BuiltWith {
 	}
 }
 
-module.exports = BuiltWith;
+export default BuiltWith;

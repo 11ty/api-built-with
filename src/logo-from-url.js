@@ -1,4 +1,4 @@
-const EleventyImage = require("@11ty/eleventy-img");
+import EleventyImage from "@11ty/eleventy-img";
 
 class LogoFromUrl {
 	static urls = {
@@ -50,4 +50,4 @@ class LogoFromUrl {
 	}
 }
 
-module.exports = LogoFromUrl;
+export default LogoFromUrl;

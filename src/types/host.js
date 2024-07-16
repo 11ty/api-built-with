@@ -1,21 +1,15 @@
-const BuiltWith = require("./built-with-type.js");
+import BuiltWith from "./built-with-type.js";
 
 class Host extends BuiltWith {
 	static tests = {
-		gatsby: (headers) => {
-			return headers.get("server")?.includes("GatsbyHosting");
-		},
-		flyio: (headers) => {
-			return headers.get("server")?.startsWith("Fly/");
-		},
+		gatsby: (headers) => headers.get("server")?.includes("GatsbyHosting"),
+		flyio: (headers) => headers.get("server")?.startsWith("Fly/"),
 		amazon: (headers) => {
 			// AmazonS3
 			return headers.get("server")?.includes("Amazon") || headers.get("X-Cache")?.includes("cloudfront");
 		},
-		gitlab: () => {
-			// I couldn’t find any unique headers for this
-			return false;
-		},
+		// I couldn’t find any unique headers for this
+		gitlab: () => false,
 		github: (headers) => {
 			return headers.get("server")?.includes("GitHub.com") || headers.get("x-github-request-id");
 		},
@@ -44,4 +38,4 @@ class Host extends BuiltWith {
 	}
 }
 
-module.exports = Host;
+export default Host;

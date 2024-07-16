@@ -1,4 +1,4 @@
-const fetch = require("node-fetch");
+import fetch from "node-fetch";
 
 class Url {
 	constructor(url) {
@@ -33,4 +33,4 @@ class Url {
 	}
 }
 
-module.exports = Url;
+export default Url;

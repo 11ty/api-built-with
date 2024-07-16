@@ -1,5 +1,5 @@
-const test = require("ava");
-const { Host, LogoFromUrl } = require("../built-with.js");
+import test from "ava";
+import { Host, LogoFromUrl } from "../built-with.js";
 
 test("Get provider from 11ty.dev", async t => {
 	let g = new Host("https://www.11ty.dev/");

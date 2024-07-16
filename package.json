@@ -4,7 +4,7 @@
   "description": "Find the hosting provider for a web site URL.",
   "main": "built-with.js",
   "license": "MIT",
-  "type": "commonjs",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/11ty/api-built-with.git"
@@ -16,7 +16,7 @@
   },
   "scripts": {
     "test": "npx ava",
-    "start": "netlify dev"
+    "start": "npx vercel dev"
   },
   "keywords": [],
   "bugs": {
@@ -25,11 +25,11 @@
   "homepage": "https://github.com/11ty/api-built-with#readme",
   "devDependencies": {
     "ava": "^6.1.2",
-    "netlify-cli": "^17.19.1"
+    "vercel": "^34.4.0"
   },
   "dependencies": {
     "@11ty/eleventy-img": "^4.0.2",
-    "@netlify/functions": "^2.6.0",
+    "@vercel/functions": "^1.4.0",
     "node-fetch": "^2.7.0"
   }
 }

@@ -1,0 +1,13 @@
+{
+	"functions": {
+		"api/built-with.js": {
+			"includeFiles": "x.svg"
+		}
+	},
+	"rewrites": [
+		{ "source": "/:path*", "destination": "/api/built-with/" },
+		{ "source": "/:path/image/host/", "destination": "/api/built-with/" },
+		{ "source": "/:path/json/", "destination": "/api/built-with/" }
+	],
+	"trailingSlash": true
+}

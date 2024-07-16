@@ -11,9 +11,15 @@ export async function GET(request, context) {
 	let requestUrl = new URL(request.url);
 	let [url, format, subtype] = requestUrl.pathname.split("/").filter(entry => !!entry);
 
-	if(url?.endsWith("favicon.ico")) {
-		return;
-	}
+  if(!url || url?.endsWith("favicon.ico")) {
+    return new Response("{}", {
+      status: 200,
+      headers: {
+        "content-type": "application/json",
+        "cache-control": `public, s-maxage=${ONE_WEEK}, stale-while-revalidate=${ONE_DAY}`
+      }
+    });
+  }
 
 	url = decodeURIComponent(url);
 

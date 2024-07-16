@@ -1,5 +1,3 @@
-import { waitUntil } from '@vercel/functions';
-
 import { Url, Host, LogoFromUrl } from "../built-with.js";
 
 const DEFAULT_IMAGE_DIMENSIONS = [60, 60];
@@ -13,7 +11,7 @@ export async function GET(request, context) {
 	let requestUrl = new URL(request.url);
 	let [url, format, subtype] = requestUrl.pathname.split("/").filter(entry => !!entry);
 
-	if(url.endsWith("favicon.ico")) {
+	if(url?.endsWith("favicon.ico")) {
 		return;
 	}
 

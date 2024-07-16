@@ -29,7 +29,6 @@
   },
   "dependencies": {
     "@11ty/eleventy-img": "^4.0.2",
-    "@vercel/functions": "^1.4.0",
     "node-fetch": "^2.7.0"
   }
 }

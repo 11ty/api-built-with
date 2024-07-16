@@ -5,9 +5,12 @@
 		}
 	},
 	"rewrites": [
+		{ "source": "/", "destination": "/api/built-with/" },
 		{ "source": "/:path*", "destination": "/api/built-with/" },
-		{ "source": "/:path/image/host/", "destination": "/api/built-with/" },
-		{ "source": "/:path/json/", "destination": "/api/built-with/" }
+		{ "source": "/:path/", "destination": "/api/built-with/" },
+		{ "source": "/:path/json/", "destination": "/api/built-with/" },
+		{ "source": "/:path/image/", "destination": "/api/built-with/" },
+		{ "source": "/:path/image/host/", "destination": "/api/built-with/" }
 	],
 	"trailingSlash": true
 }
